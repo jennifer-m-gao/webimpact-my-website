@@ -4,9 +4,9 @@ import Container from "@/app/components/Container";
 import { PortableText } from "@portabletext/react";
 import Image from "next/image";
 import { tryGetImageDimensions } from "@sanity/asset-utils";
-import imageUrlBuilder from '@sanity/image-url'
+import createImageUrlBuilder from '@sanity/image-url'
 
-const builder = imageUrlBuilder(client);
+const builder = createImageUrlBuilder(client);
 
 function urlFor(source) {
   return builder.image(source);
