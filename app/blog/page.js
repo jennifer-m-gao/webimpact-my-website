@@ -23,7 +23,7 @@ export default async function Blog() {
     <Container>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {posts.map((post) => (
-          <BlogPostCard key={posts.slug} post={posts[0]} />
+          <BlogPostCard key={posts[0].slug} post={posts[0]} />
         ))}
       </div>
     </Container>
